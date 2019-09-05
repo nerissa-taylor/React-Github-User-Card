@@ -2,18 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import UserCard from './components/UserCard';
+import User from './components/User';
+import FollowerCard from './components/FollowerCard';
 
 
-function App(props) {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <UserCard users={user} />
+class App extends React.Component {
+  render() {
+    return (
+      <div>
 
 
-      </header>
-    </div>
-  );
+        <h1>This is my UserList</h1>
+        <User />
+
+      </div>
+    )
+  }
 }
-
 export default App;
