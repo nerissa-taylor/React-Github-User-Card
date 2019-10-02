@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import UserCard from './UserCard';
 import FollowerCard from './FollowerCard';
+import Button from '@material-ui/core/Button';
 
 class User extends React.Component {
     constructor() {
@@ -56,7 +57,7 @@ class User extends React.Component {
                     onChange={this.handleChanges}
                     name="userName" />
 
-                <button onClick={this.state.fetchUsers}>Get Users Followers</button>
+                <Button variant="contained" color="primary" onClick={this.state.fetchUsers}>Get Users Followers</Button>
                 {this.state.followerData.map(follower => {
 
 
