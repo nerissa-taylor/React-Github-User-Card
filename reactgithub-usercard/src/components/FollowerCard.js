@@ -4,11 +4,9 @@ function FollowerCard(props) {
     console.log(props)
     return (
         <div className="follower-card">
-            <img src={props.followers.avatar_url} alt="My user pic" avatar></img>
-            <h2>Me:{props.followers.login}</h2>
-            <p>Location:{props.followers.location}</p>
-            <p><strong>Following:</strong>{props.followers.following}</p>
-            <p><strong>Followers:</strong>{props.followers.followers}</p>
+            <img className="pic" src={props.followers.avatar_url} alt="My user pic" avatar></img>
+            <h4>Me:{props.followers.login}</h4>
+            <h4>Url:{props.followers.url}</h4>
 
 
 

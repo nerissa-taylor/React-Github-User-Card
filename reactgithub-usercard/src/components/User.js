@@ -40,7 +40,9 @@ class User extends React.Component {
     }
 
 
-
+    handleChanges = e => {
+        this.setState({ userName: e.target.value });
+    };
 
     render() {
         return (
@@ -51,7 +53,7 @@ class User extends React.Component {
                 <input
                     type="text"
                     value={this.state.userName}
-                    onChange={this.state.handleChange}
+                    onChange={this.handleChanges}
                     name="userName" />
 
                 <button onClick={this.state.fetchUsers}>Get Users Followers</button>
